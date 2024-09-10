@@ -1,0 +1,22 @@
+body {
+    background-color: lightgray; /*#191919*/
+    color:gray;
+    font-family:Roboto,sans-serif;
+    font-weight:500;
+    max-width:100%;
+}
+
+h1 {
+    font-size: 24px;
+    text-align: center;
+}
+
+h2 {
+    font-size: 24px;
+    text-align: center;
+    color:black;
+}
+
+.ok {
+   text-align: center;
+}

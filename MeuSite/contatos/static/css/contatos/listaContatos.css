@@ -1,0 +1,12 @@
+@charset "UTF-8";
+
+th, td {
+    width: 20%;
+    border-style: ridge;
+    border-color: black;
+    text-align: center;
+    padding: 5px;
+}
+table {
+    border-collapse: collapse;
+}

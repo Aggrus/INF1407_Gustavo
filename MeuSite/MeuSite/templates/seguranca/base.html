@@ -1,0 +1,16 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>{% block title %}{% endblock %}</title>
+        <link rel="stylesheet"
+        href="{% static ‘MeuSite/css/estilo.css' %}">
+    </head>
+    <body>
+        <h1>Site Seguro</h1>
+        <div>| Você é {% firstof user.username "visitante" %}</div>
+        <hr>
+        {% block content %}{% endblock %}
+    </body>
+</html>

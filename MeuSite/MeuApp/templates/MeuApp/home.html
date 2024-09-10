@@ -1,0 +1,20 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>homepage</title>
+    <link rel="stylesheet" href="{% static 'css/MeuApp/style.css' %}">
+</head>
+<body>
+    {% include 'contatos/links.html' %}
+    <hr>
+    <h1>Primeira Página</h1>
+    <h2>{{hora}}:{{minuto}}</h2>
+    <div class="ok">
+        <form action='{% url 'segunda' %}'>
+            <input type='submit' value='Para a outra página...'/>
+        </form>
+    </div>
+    <img src="{% static 'img/MeuApp/happyface.png' %}"/>
+</body>
+</html>
