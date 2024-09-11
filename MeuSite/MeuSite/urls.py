@@ -19,10 +19,12 @@ from django.contrib import admin
 from django.urls import path
 from django.urls.conf import include
 from MeuApp import views as meuAppViews
+from MeuSite import views as meuSiteViews
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', meuAppViews.home, name='homepage'),
     path('SegundaPagina', meuAppViews.segundaPagina, name='segunda'),
     path("contatos/", include ('contatos.urls')),
     path('accounts/', include('django.contrib.auth.urls')),
+    path('seguranca/', meuSiteViews.homeSec, name='sec-home'),
 ]
